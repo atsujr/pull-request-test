@@ -1,6 +1,7 @@
 var sortNumber = function (number) {
    number.sort(function (a, b) {
-       if (a == b) {
+    //以下の３行目において、===を使用しました。
+       if (a === b) {
            return 0;
        }
        return a < b ? -1 : 1;
